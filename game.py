@@ -2,11 +2,13 @@ import random
 
 rn = random.randint(1, 5)
 
-gn = int(input("랜덤 숫자를 추측해 주세요 : "))
+gn = -1
 
 
-if rn == gn : 
-    print("정답입니다!")
-else : 
-    print(f"틀렸습니다! 정답은{rn}입니다!")
+while rn != gn :
+    gn = int(input("숫자 추측해 : "))
 
+    if rn == gn :
+        print("정답입니다!")
+    else : 
+        print("틀렸습니다! 다시 하시죠 !")
